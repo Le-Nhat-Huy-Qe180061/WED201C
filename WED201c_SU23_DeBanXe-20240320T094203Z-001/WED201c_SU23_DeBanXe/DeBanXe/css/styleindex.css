@@ -1,0 +1,130 @@
+
+
+.footer
+{
+    background-color: #0EC0C3;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.content-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search
+{
+    margin-top: 10%;
+}
+
+.description-title h1
+{
+    text-align: center;
+    color: #0EC0C3;
+}
+
+
+.logo
+{
+    margin-top: 20px;
+}
+
+.logo img{
+    padding-left: 50px;
+}
+
+.description-title p
+{
+    font-size: 24px;
+}
+
+.feedback
+{
+    margin-top: 9%;
+    margin-left: 2%;
+}
+
+.menu-list
+{
+    margin-left: 30%;
+}
+
+.menu-list li a
+{
+    margin: 0px 20px;
+}
+
+.xe img
+{
+    object-fit: cover;
+}
+
+.ab-160 img
+{
+    width: 80%;
+    margin-left: 30%;
+}
+
+.vision2023 img
+{
+    width: 50%;
+    margin-left: 20%;
+}
+
+.vario160 img
+{
+    width: 60%;
+    margin-left: 27%;
+}
+
+.vario160-title h3
+{
+   color: orange;
+}
+
+.vario160-title p
+{
+    font-size: 22px;
+}
+
+.color-title h3 
+{
+    color: orange;
+}
+
+.color-title h4
+{
+    color: orange;
+}
+
+.color-title
+{
+    font-size: 19px;
+}
+
+.Accessories
+{
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+
+.Accessories .Accessories-one img{
+    margin-left: 80px;
+}
+
+
+.Accessories .Accessories-two img{
+    margin-left: 50px;
+    width: 60%;
+    
+}
+
+@media screen and (max-width: 767px) {
+    .logo img{
+        margin-top: 30px;
+    }
+}

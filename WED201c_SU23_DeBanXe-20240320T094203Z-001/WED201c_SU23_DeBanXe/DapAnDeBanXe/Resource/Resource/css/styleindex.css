@@ -1,0 +1,80 @@
+.footer{
+    background-color: #0EC0C3;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.title{
+    color: #0EC0C3;
+    text-align: center;
+    padding: 30px 0;
+}
+.search{
+    margin-top: 10%;
+}
+.feedback{
+    margin-top: 9%;
+}
+.logo{
+margin-top: 20px;
+}
+.logo img{
+    padding-left: 50px;
+    
+}
+.ab-160 img{
+   margin-left: 60px;
+   margin-top: 50px;
+   height: 400px;
+}
+.vison-sh img{
+        width: 50%;
+}
+p{
+    font-size: 19px;
+}
+
+.menu-list {
+    margin-left: 30%;
+}
+.menu-list li{
+    padding: 0 20px;
+}
+
+.vario img{
+        padding-left: 60px;
+}
+
+.vario-info h3{
+        color: orangered;
+}
+.accessories img{
+    padding-left: 80px;
+}
+.accessories h3{
+    color: orangered;
+    font-size: 35px;
+    text-align: center;
+}
+.accessories h4{
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+            .logo img{
+                margin-left: 25%;
+                margin-top: 20%;
+            }
+            .ab-160 img{
+                width: 80%;
+            }
+            .vison-sh img {
+                    margin-left: 120px;
+            }
+            .vario img{
+                width: 70%;
+            }
+            .feedback h3{
+                text-align: center;
+            }
+}

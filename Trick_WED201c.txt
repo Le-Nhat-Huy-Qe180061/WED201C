@@ -1,0 +1,159 @@
+Trick 4:
+Nếu bạn làm đúng với đề nhưng bạn không hiểu vì sao text không có đúng như hình thì cứ chỉnh font-size từ 18 tới 22px, nếu không được thì xài 1 rem tới 1.5 rem
+Còn muốn khoảng cách trong đoạn giãn ra thì ta chỉ cần gọi line-height: 1.5; (khoảng cách trong đoạn text dài ra).
+Và đặc biệt, bạn thấy quả đề đặc biệt nó font-family rất là thì hãy lia tới đầu trang html sẽ thấy trường gắn cho cái link font chữ (cụ thể đề sp23 cây kem có font ở header).
+font-family: italic; // làm nghiêng text
+font-weight: bold; // in đậm text
+
+Ngoài ra với image, nhớ setting cái khung cho nó (Với bootstrap) rồi mới set img width = 100% nhé, xài image thì cứ xài padding hoặc giảm width thì hình ảnh thu nhỏ lại. Nhưng đa số bài đều là dạng img có pixel cố định như 500px 600px độ lệch theo 25px hoặc 15px
+
+
+
+
+
+Trick 7:
+Nhắc lại 7749 lần là đừng thêm div tầm bậy. Sẽ có 1 đề bạn xài flex nhưng dính <h1> <h2> làm cho chữ với div nó chung một hàng phải không?
+Và thằng flex-basis: 100%; sinh ra để cứu bạn không mất 10 PE. Ví dụ:
+CSS:
+.copyright {
+  flex-basis: 100%;
+  text-align: center; /* văn bản căn giữa */
+}
+
+Khi ta display flex: ta sẽ xài flex-basis: 100%; cho những phần tử nào không cần flex ở trỏng (mục đích của flex-basis này là giãn 100% chiều rộng ra).
+À nhớ thêm flex-wrap: wrap; vào thằng div tổng nếu không chạy được.
+
+
+Trick 10:
+Lưu đống color này về đi sau thi lấy ra xài cho lẹ:
+#F79646 : orange
+#0EC0C3 : ocean
+#3A7135 : green
+#06A2C8 : dark blue;
+#E7E3E4 : gray;
+
+
+
+
+Okay, hiện tại theo thống kê sẽ có 2 dạng bài: Có bootstrap và không có bootstrap.
+I. Với bài có bootstrap:
+Thường có bootstrap sẽ không yêu cầu tạo table với làm js nhé nên gặp là 10 PE
+1/ Phần Header:
+Chúng ta tốt nhất nên xài 12-grid -> tức là col-md-4 cho từng cái làm cho canh khung hình ra giữa một cách nhanh chóng.
+Đây là đoạn code mình tự chế ra áp dụng cho 2 dạng bài luôn (Có copy vui lòng chỉnh cái tên selector dùm :)) )
+CSS:
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.text-head{
+    width: 33.3%;
+    text-align: center;
+    color: #0EC0C3;
+}
+.logo{
+    width: 33.3%;
+    text-align: center;
+}
+.search{
+    width: 33.3%;
+}
+
+3/ Phần Footer:
+Copy cái này là xong hết 90% bài rồi =)))
+CSS:
+.footer{
+    background-color: #0EC0C3;
+    padding: 10px;
+}
+.footer p, h5{
+    text-align: center;
+    color: white;
+}
+
+
+4. Phần @media:
+Phần này nếu học không giỏi thì ghi đại cái header đi, set width 100% với canh giữa là xong, cái này tùy dạng đề nhưng đa số là vậy.
+CSS:
+@media screen and (max-width: 768px) {
+    .header{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+Các thuật ngữ với từ vựng mình thu nhập được sau khi xong 6 đề FE (Có thể nhiều hơn nhưng update sau):
+
+- Parentheses: Dấu ngoặc đơn. ( Thường xuất hiện trong mấy bài hỏi về js)
+
+- Vertically = dọc, Horizontally = ngang ( Thường dùng trong câu hỏi về overflow-x -> hàng ngang, và overflow-y -> hàng dọc)
+
+- Fruid = linh hoạt ( hay thấy trong container fruid với fruid measurement)
+- Fluid measurement = phép đo lường linh hoạt ( rem em %...)
+
+-"Semantic" trong HTML nói về việc sử dụng các thẻ đánh dấu (markup) một cách có ý nghĩa để biểu thị bản chất của thông tin mà nó chứa. Sử dụng các thẻ như <article>, <footer>, <header>, và <nav> giúp làm rõ ý nghĩa và cấu trúc của nội dung trang web dành cho cả những người và máy móc đọc nó.
+-> Nói tóm lại, nó là việc sử dụng các phần tử phù hợp để cung cấp ý nghĩa và cấu trúc cho nội dung trên trang. Chứ đừng lạm dụng chữ div nhiều quá nhé.
+
+
+- -webkit-: Là tiền tố dùng cho các trình duyệt sử dụng WebKit engine, như Safari của Apple và các phiên bản cũ của Chrome và Opera.
+- -moz-: Là tiền tố dành riêng cho trình duyệt Firefox, được phát triển bởi Mozilla Corporation.
+- -o-: Là tiền tố cho trình duyệt Opera, trước khi nó chuyển từ Presto sang sử dụng WebKit (và sau đó là Blink).
+- -ms-: Dùng cho trình duyệt Internet Explorer của Microsoft và Edge (phiên bản cũ trước khi chuyển sang Chromium).
+
+*Với câu @media screen and ( max-width: 768px) nếu có screen hoặc có all thì:
+-screen: Được sử dụng cho các thiết bị có màn hình như máy tính để bàn, laptop, máy tính bảng và điện thoại thông minh. Khi bạn sử dụng @media screen, bạn đang chỉ định rằng các style bên trong sẽ chỉ được áp dụng khi nội dung được xem trên một thiết bị có màn hình.
+- all: Đây là loại mặc định và áp dụng cho tất cả các loại thiết bị, bao gồm cả screen, print (máy in), speech (trình đọc màn hình), và các media type khác. Kết quả là, khi bạn sử dụng @media all, các style sẽ được áp dụng trên mọi thiết bị không phụ thuộc vào loại. Lưu ý từ media type nhá.
+
+
+-min-device-width: 400px chỉ đến chiều rộng tối thiểu của màn hình thiết bị, tức là nó không thay đổi khi bạn thay đổi kích thước cửa sổ trình duyệt.
+-min-width: 400px áp dụng cho chiều rộng tối thiểu của viewport (cửa sổ xem nội dung web), có thể thay đổi khi bạn thay đổi kích thước cửa số trình duyệt.
+
+-Wireframe (khung xương/cấu trúc dây) là một công cụ trực quan để thiết kế web ở cấp độ cấu trúc. Một wireframe thường được sử dụng để bố trí nội dung và chức năng trên một trang. Nói dễ hiểu hơn là bạn tạo khung sườn cho bài làm xong bạn làm theo (specify the layout and content of your pages).
+
+-Mnemonic trong lập trình nghĩa là đặt tên biến sao cho có ý nghĩa, mô tả được giá trị mà nó lưu trữ hoặc hành vi mà nó biểu diễn, giúp người lập trình dễ nhớ và hiểu code hơn.
+
+-World Wide Web Consortium (W3C): Tổ chức quốc tế phát triển các chuẩn mực cho World Wide Web (WWW) để đảm bảo sự tương thích và đồng nhất trên toàn cầu.
+-Internet Corporation for Assigned Numbers and Names (ICANN): Tổ chức phi lợi nhuận quản lý việc phân bổ các địa chỉ IP, quản lý hệ thống tên miền (DNS) và cấp phép các tên miền cấp cao (TLDs).
+
+- Pseudo-class được dùng để định nghĩa trạng thái đặc biệt của một phần tử (element).
+- Pseudo-element cho phép bạn định rõ các phần của một phần tử để áp dụng style (ví dụ như ::before, ::after).
+
+- LAN: Local Area Network - Mạng Khu Vực Địa phương. Đây là mạng nằm trong phạm vi hẹp như trong một văn phòng, tòa nhà hoặc trường học.
+- MAN: Metropolitan Area Network - Mạng Khu Vực Đô thị. Kích thước lớn hơn LAN và thường xuyên được sử dụng để kết nối các mạng LAN trong phạm vi một thành phố.
+- WAN: Wide Area Network - Mạng Khu Vực Rộng. Kết nối các mạng lớn, có thể bao gồm nhiều thành phố, quốc gia, thậm chí là liên lục địa.
+- HTML: HyperText Markup Language.
+- CSS: Cascading Style Sheet
+- HTTP (HyperText Transfer Protocol)
+- HTTPS (HyperText Transfer Protocol Secure)
+- FTP: File Transfer Protocol.
+
+- :hover: Thay đổi style khi con trỏ chuột rê lên trên phần tử.
+- :visited: Áp dụng style cho link đã được người dùng click vào trước đó.
+-🔗 Style cho link chưa được truy cập.
+- :active: Style khi phần tử đang được click.
+- :focus: Áp dụng style khi phần tử (thường là form input) có focus.
+- transition: Thuộc tính CSS cho phép thay đổi từ từ giữa các trạng thái, tạo hiệu ứng mượt mà khi style thay đổi. 🌟
+
+- onload: Sự kiện này được kích hoạt khi một đối tượng, như hình ảnh hoặc trang web, đã tải xong.
+- ondrag: Được kích hoạt khi một phần tử hoặc vùng chọn bị kéo (drag).
+- ondrop: Được kích hoạt khi một phần tử được kéo được "thả" vào một khu vực thả hợp lệ.
+- onseeking: Đây là sự kiện liên quan đến media elements (như <audio> hoặc <video>)
+- onclick: Khi người dùng click vào một phần tử.
+- onmouseover: Khi con trỏ chuột di qua một phần tử.
+- onmouseout: Khi con trỏ chuột rời khỏi một phần tử.
+- onkeydown: Khi người dùng nhấn và giữ một phím.
+- onscroll: Khi người dùng scroll( lăn chuột).
+
+
+Mẹo nhớ: Nhớ thằng H6 là 1rem có 16px xong tự cộng 0.25rem lên dần.
+h1 Bootstrap heading (2.5rem = 40px)
+h2 Bootstrap heading (2rem = 32px)
+h3 Bootstrap heading (1.75rem = 28px)
+h4 Bootstrap heading (1.5rem = 24px)
+h5 Bootstrap heading (1.25rem = 20px)
+h6 Bootstrap heading (1rem = 16px)

@@ -1,0 +1,165 @@
+
+:root
+{
+    --color-one:#bcf3f3;
+    --color-two:#16A1A1;
+    --color-three:#ED8A2D;
+}
+
+
+ /* loGo  */
+
+.logo__header img
+{
+    height: auto;
+    width: 55px;
+    margin-left: 15px;
+
+}
+
+.menu a
+{
+    color: var(--color-two);
+}
+
+ /* END LOGO  */
+
+
+ /* Section one  */
+.container-fluid
+{
+    margin-bottom: 12px;
+}
+
+ .section__one
+ {
+    margin-top: 10px;
+ }
+
+ .section__one h1
+ {
+   color: var(--color-three);
+ }
+
+ .section__one p
+ {
+    font-size: 20px;
+ }
+
+
+
+
+ .section__one__img img
+ {
+    display: flex;
+    margin: 0 auto;
+    width: 61%;
+ }
+
+
+
+
+ .list__eat
+ {
+    background-color: var(--color-one);    
+    margin-top: 5px;
+ }
+
+ .eat__flex
+ {
+    display: flex;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+ }
+
+ .list__eat .color__one
+ {
+    color: var(--color-three);
+    border-bottom:4px solid #066e6e;
+ }
+ 
+
+ .list__eat img 
+ { 
+    width: 103px;
+    height: 105px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* End Section One  */
+
+/* Section Two */
+.section__two h1
+{
+    color: var(--color-three);
+    text-align: center;
+}
+
+.section__two p 
+{
+    font-size: 20px;
+}
+
+.section__two .section__two__img img
+{
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
+}
+
+.section__two .section__two__img
+{
+    margin: 0 auto;
+}
+/* End section Two  */
+
+
+/* Section THREE  */
+
+.section__three
+{
+    margin-bottom: 20px;
+}
+
+.section__three h1
+{
+  color: var(--color-three);
+  text-align: center;
+}
+
+.section__three p
+{
+    font-size: 20px;
+}
+
+.section__three img 
+{
+    width: 105%;
+}
+
+/* END SECTION THREE  */
+
+
+/* Section four  */
+.section__four
+{
+    background-color: #119A92;
+    text-align: center;
+    padding: 20px;
+}
+
+.section__four p
+{
+    font-size: 18px;
+    color: white;
+}
+.section__four h5
+{
+    color: white;
+}
+
+
+
+/* END SECTION FOUR  */

@@ -1,0 +1,155 @@
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 80px;
+}
+
+.palmtree h2{
+    text-align: center;
+    color: #59B7D7;
+    padding-top: 30px;
+    margin-left: 20px;
+    width: 75%;
+    font-style: italic;
+}
+
+.search{
+    width: 35%;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.image-hagiang img{
+    width: 100%;
+    height: 450px;
+    margin-left: 10px;
+}
+
+.text-hagiang h2{
+    color: #4cb7d2;
+    text-align: center;
+}
+
+.form-group{
+    width: 100%;
+}
+.button{
+    background-color: #db751c;
+    padding:10px 10px 10px 10px;
+    width: 15%;
+    color: white;
+}
+
+#landmark{
+    margin: 15px 0 30px 0;
+}
+
+#landmark h2{
+    color: #4cb7d2;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image-famous{
+    width: 100%;
+    height: 380px;
+}
+
+.quanba{
+    width: 100%;
+    position: relative;
+}
+
+.quanba-text{
+width: 50%;
+}
+
+.quanba-text h2{
+    color: #60B951;
+}
+
+.quanba-hagiang{
+    margin: 30px 0;
+}
+
+.footer{
+    background-color: #0EC0C3;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}
+
+.price{
+    text-align: center;
+}
+.price h4{
+    color: orange;
+
+}
+
+.price p {
+    background-color: #2FCAE9;
+    width: 30%;
+    padding: 10px 0;
+    color: white;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .content-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .palmtree h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo{
+        width: 35%;
+    }
+
+    .search{
+        width: 100%;
+    }
+
+    .button{
+        width: 20%;
+    }
+
+    .price p{
+        width: 30%;
+        text-align:center;
+        margin: 0 auto;
+    }
+
+    .image-hagiang img{
+        width: 100%;
+    }
+    .text-hagiang h2{
+        text-align: center;
+    }
+    #landmark{
+        width: 100%;
+    }
+    .quanba-text{
+        width: 100%;
+    }
+
+    .quanba{
+        width: 100%;
+    }
+    #img1{
+        margin-bottom: 25px;
+    }
+
+}

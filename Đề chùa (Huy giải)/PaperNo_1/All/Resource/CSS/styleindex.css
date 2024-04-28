@@ -1,0 +1,176 @@
+
+
+
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo img
+{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: 30px;
+}
+
+.header__menu ul
+{
+    display: flex;
+}
+
+.header__menu li,a {
+    list-style: none;
+    text-decoration: none;
+    color: #06A2C8 ;
+}
+
+.header__menu li
+{
+    margin: 0px 20px;
+}
+
+.header__search button
+{
+    background-color: #0000;
+    color: white;
+    margin-right: 10px;
+}
+
+/* END HEADER  */
+.content__banner
+{
+    display: flex;
+    justify-content: center;
+}
+
+.content__banner img{
+   width: 690px;
+   height: 550px;
+}
+
+/* END BANNER  */
+
+
+
+.content__detail h1
+{
+    text-align: center;
+    color: #06A2C8;
+}
+
+.content__detail p
+{
+    color: #F79646;
+    font-size: 18px;
+    margin: 0 10px;
+    font-style: italic;;
+}
+
+.content__detail 
+{
+    margin-bottom: 20px;
+}
+
+
+/* END CONTENT  */
+
+
+.footer{
+    background-color: #06A2C8;
+    padding: 10px;
+    margin: 0 -10px;
+}
+
+.footer__info
+{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.footer h5
+{
+    text-align: center;
+    color: white;
+}
+
+
+
+/* FORM  */
+
+.form__favorite
+{
+    width: 500px;
+    padding: 12px;
+    border: 1px solid #06A2C8;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.form__favorite-header
+{
+    background-color: #0EB5AB;
+    text-align: center;
+    color: white;
+    padding: 16px 0px;
+    font-size: 18px;
+}
+
+.form-content
+{
+   background-color: #E7E3E4;
+}
+
+.form-content .form-input 
+{
+    display: flex;
+    height: 35px;
+    /* margin-bottom: 14px; */
+    padding: 13px 0px;
+}
+
+#price{
+    flex: 1;
+    text-align: end;
+    color: #F79646;
+}
+
+.form-content .form-input label
+{
+    width: 120px;
+    padding: 5px; 
+}
+
+.form-content .form-input select
+{
+    width: 160px;
+}
+
+.form-tour button
+{
+    background-color: #F79646;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    margin-top: 20px;
+}
+
+.form-tour 
+{
+    text-align: center;
+}
+
+#total-amout
+{
+    background-color: green;
+    color: white;
+    padding: 10px 0px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}

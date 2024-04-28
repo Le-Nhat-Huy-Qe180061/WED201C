@@ -1,0 +1,242 @@
+
+:root
+{
+    --color-text: #F48911;
+}
+/* HEADER  */
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+
+.header__logo img 
+{
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.header__search button
+{
+    background-color: #000;
+    color: white;
+}
+
+
+/* END HEADER */
+
+/* REGISTER  */
+
+.register
+{
+    display: flex;
+}
+
+/* 
+.register .register__img
+{
+    width: 50%;
+} */
+
+.register .register__img img
+{
+    width: 800px;
+    height: 600px;
+}
+
+
+.register .register__card
+{
+    /* width: 50%; */
+    margin-left: 20px;
+}
+
+
+.register__form h1
+{
+    text-align: center;
+    color: var(--color-text);
+}
+
+.register__form div label
+{
+    color: var(--color-text);
+}
+
+.register__form .fullname input
+{
+    width: 450px;
+    height: 30px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+.register__form .phone input
+{
+    width: 450px;
+    height: 30px;
+    margin-left: 84px;
+    margin-bottom: 20px;
+}
+
+
+.register__form .car select
+{
+    width: 450px;
+    height: 30px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+.register__form .comments textarea
+{
+    width: 450px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.register__form .btn input
+{
+    background-color: var(--color-text);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    margin-top: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.register__form .btn 
+{
+    margin-left: 100px;
+}
+
+/*  END REGISTER  */
+
+
+/* Sellers  */
+
+.sellers
+{
+    margin: 0 50px;
+
+}
+
+.sellers__info
+{
+    display: flex;
+    margin-top: 20px;
+}
+
+.sellers h1 
+{
+    text-align: center;
+    color: red;
+}
+
+.sellers__img
+{
+    width: 50%;
+}
+
+.sellers__img img 
+{
+   width: 700px;
+   height: 450px;
+   object-fit: cover;
+   margin-right: 20px;
+}
+
+.sellers__decs h2
+{
+    color: aqua;
+}
+
+.sellers__decs p
+{
+    border-bottom: 1px solid #000;
+}
+
+.sellers__decs .title
+{
+    margin-bottom: 20px;
+    max-width: 645px;
+}
+
+.sellers__decs
+{
+    margin-left: 50px;
+}
+
+/* END Sellers  */
+
+/* accessories  */
+
+.accessories
+{
+    margin: 0 50px;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+
+.accessories h1
+{
+    text-align: center;
+    color: red;
+}
+
+.accessories__info
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.accessories .accessories__info .primary
+{
+    
+    display: flex;
+}
+
+.accessories .accessories__info .second
+{
+   
+    display: flex;
+}
+
+.accessories__info img 
+{
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.accessories .accessories__info .price
+{
+    color: #F48911;
+}
+
+.accessories .accessories__info .decs
+{
+    margin-left: 20px;
+}
+
+.accessories .accessories__info .decs__title
+{
+    max-width: 275px;
+}
+
+
+/* END accessories */
+
+
+.footer
+{
+    text-align: center;
+    background-color: #06A2C8;
+    color: white;
+    padding: 30px;
+}

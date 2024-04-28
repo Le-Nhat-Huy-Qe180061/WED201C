@@ -1,0 +1,186 @@
+:root {
+    --color-text: #95D2DC;
+}
+
+/* Header  */
+.header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+.header__title {
+    color: #0FC1C5;
+}
+
+.header__img img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+.header__title h2 {
+    font-size: 25px;
+    margin-top: 60px;
+}
+
+.header__search .search__box {
+    width: 400px;
+    margin-top: 60px;
+}
+
+/* END HEADER  */
+
+.menu__main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu .menu-list {
+    width: 100%;
+}
+
+
+/* Unforgettable */
+
+
+/* .unforgettable {
+    word-break: break-all;
+} */
+
+.unforgettable__img img {
+    width: 450px;
+    height: 450px;
+}
+
+/* .unforgettable__desc
+{
+  margin:0px;
+  padding: 0px;
+}  */
+
+.unforgettable__desc h2 {
+    color: var(--color-text);
+    text-align: center;
+}
+
+.unforgettable__input h2 {
+    color: var(--color-text);
+}
+
+.unforgettable p {
+    font-size: 20px;
+}
+
+.unforgettable__input {
+    width: 300px;
+    height: auto;
+    margin-left: 45px;
+}
+
+.unforgettable__input h2 {
+    text-align: center;
+}
+
+.unforgettable__input button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0px;
+}
+
+/* END Unforgettable  */
+
+/* Famous landmarks */
+
+.famous__landmarks {
+    margin-bottom: 30px;
+}
+
+.famous__landmarks h2 {
+    color: var(--color-text);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.famous__landmarks img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* END Famous landmarks  */
+
+/* Tours  */
+
+.tours__img img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.tours__desc h2 {
+    color: green;
+}
+
+
+.tours__desc p {
+    font-size: 19px;
+}
+
+.tours__book .btn {
+    background-color: #28CEEF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 0px;
+}
+
+
+.tours__book {
+    margin-top: 56px;
+    text-align: center;
+}
+
+
+.footer .footer__desc {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #0FC1C5;
+    padding: 30px;
+    color: white;
+}
+
+/* END tours  */
+
+/* responsive  */
+
+@media (max-width: 1195.98px) {
+
+    .header__img {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 983.98px) {
+    .menu__main {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .menu .menu-list {
+        width: 100%;
+    }
+
+
+
+}

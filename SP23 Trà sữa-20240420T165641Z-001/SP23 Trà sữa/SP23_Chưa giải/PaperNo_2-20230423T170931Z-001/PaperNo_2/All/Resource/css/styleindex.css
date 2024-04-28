@@ -1,0 +1,187 @@
+
+
+
+/* HEADER  */
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-title
+{
+    width: 500px;
+    color: #3A7135;
+    font-style: italic;
+    font-size: 34px;
+    font-weight: 600;
+    font-family: Ephesis;
+    text-align: center;
+}
+
+
+.header-logo img
+{
+    height: 150px; 
+    border: 2px solid green;
+    border-radius: 50%;
+}
+
+/* END HEADER  */
+.menu
+{
+  background-color: #008000;
+}
+
+
+.menu ul 
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.menu li,a {
+    text-decoration: none;
+    list-style: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 20px;
+} 
+
+
+.banner
+{
+    display: flex;
+}
+
+.banner img 
+{
+    width: 50%;
+    object-fit: cover;
+}
+
+/* PRODUCT  */
+.product
+{
+    display: flex;
+    align-items: center;
+}
+
+.product-img
+{
+    margin-right: 20px;
+}
+
+.product-img img 
+{
+    width: 453px;
+    height: 440px;
+}
+
+.product-detail h2
+{
+    color: red;
+}
+
+.product-detail p
+{
+    font-weight: 600;
+}
+
+
+.product-list
+{
+    font-family: Ephesis;
+    font-size: 26px;
+    font-weight: 700;
+    color: #b1d9ce;
+}
+/* END PRODUCT  */
+
+
+/* ORDER  */
+
+.order
+{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list
+{
+    margin: 0px 70px;
+    width: 300px;
+}
+
+.menu-list__header
+{
+    background-color: #008000;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.menu-list__header-first
+{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.menu-list__content
+{
+    background-color: #E9E3E3;
+}
+
+.menu-list__item
+{
+    display: flex;
+    padding: 5px;
+}
+
+.menu-list__item-price{
+    flex: 1;
+    text-align: end;
+    color: orange;
+}
+
+.order-button
+{
+    background-color: #F7732B;
+    color: white;
+    border: none;
+    padding: 10px 45px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.menu-list__footer
+{
+    background-color: #F7732B;
+    padding: 10px 40px;
+    text-align: center;
+    color: white;
+    display: none;
+}
+/* END ORDER  */
+
+
+
+
+
+
+
+.footer
+{
+    background-color: #008000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

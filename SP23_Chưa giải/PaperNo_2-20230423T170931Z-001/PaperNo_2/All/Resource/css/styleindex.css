@@ -1,0 +1,196 @@
+:root {
+    --color-one: #008000;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+.header__img {
+    border: 2px solid var(--color-one);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+.header .head__text {
+    color: var(--color-one);
+    font-size: 34px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: Ephesis;
+    align-items: center;
+    width: 500px;
+    
+}
+
+.head__text 
+{
+    text-align: center;
+}
+
+/* MENU  */
+
+.menu__Header .menu-list {
+    display: flex;
+    justify-content: center;
+    background: var(--color-one);
+}
+
+.menu-list {
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.menu__Header .menu-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu__Header .menu-list li {
+    list-style: none;
+    margin: 0 32px;
+    font-size: 20px;
+}
+
+/* END MENU  */
+
+
+.img__Main {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.img__Main img {
+    width: 50%;
+}
+
+
+
+/* PRODUCT  */
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.product .img__product img {
+    object-fit: cover;
+    height: 430px;
+    width: 520px;
+}
+
+
+.detail__product
+{
+    margin: 0 30px;
+}
+
+.detail__product h2
+{
+    color: red;
+}
+
+.detail__product p
+{
+    font-weight: 700;
+}
+
+
+.detail__product ul li
+{
+    color: #b1d9ce;
+    font-family: Ephesis;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+
+/* END PRODUCT  */
+
+
+/* MENU ICE  */
+.menu__ice
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.menu__ice-list
+{
+    margin: 40px;
+    text-align: center;
+   
+}
+
+
+.menu__ice .menu__title
+{
+    background-color: var(--color-one);
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.menu__ice .menu__title p
+{
+    margin: 5px 20px;
+}
+
+.menu__ice .menu__choice
+{
+    background-color: #e9e3e3;
+   
+}
+
+.menu__ice .menu__choice div
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.menu__ice-list button
+{ 
+    background-color: orange;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: white;
+    margin-left: 100px;
+}
+
+
+.choice input
+{
+    margin: 0 10px;
+}
+
+.menu__choice .price
+{
+    margin-right: 10px;
+}
+
+/* END MENU ICE  */
+
+.footer
+{
+    background-color: var(--color-one);
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+

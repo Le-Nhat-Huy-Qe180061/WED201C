@@ -1,0 +1,137 @@
+/* HEADER  */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 10px;
+}
+
+.header-fluid
+{
+    padding: 0px;
+}
+
+.header-title {
+    width: 33.3%;
+    text-align: center;
+    color: red;
+    font-style: italic;
+}
+
+.header-logo {
+    width: 33.3%;
+    text-align: center;
+}
+
+.header-logo img {
+    width: 200px;
+    height: 120px;
+}
+
+.header-search {
+    width: 33.3%;
+}
+
+/* END HEADER  */
+
+.menu ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* description  */
+.description-decs h1 {
+    color: #0EC0C3;
+    text-align: center;
+    margin: 25px 0px;
+}
+
+.description p {
+    font-size: 20px;
+    padding: 0px 15px;
+}
+
+/* END description */
+
+
+/* IMAGES  */
+.primary-left img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+}
+
+.images-list {
+    text-align: center;
+}
+
+.images .second img
+{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/* END IMAGES  */
+
+
+/* SELLER  */
+.seller-title h1 {
+    color: #0EC0C3;
+    text-align: center;
+}
+
+.seller-decs h3 {
+    color: #F79646;
+}
+
+.seller-decs p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.seller-img img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* END SELLER  */
+
+/* ORDER  */
+.order .order-title {
+    color: #0EC0C3;
+    text-align: center;
+}
+
+.order {
+    margin: 30px 0px;
+}
+
+/* END ORDER  */
+
+.footer {
+    background-color: #0EC0C3;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-search {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .images .second
+    {
+        text-align: center;
+    }
+
+}
